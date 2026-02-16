@@ -1,4 +1,5 @@
 namespace Lab0;
+
 /// <summary>
 /// Interface for a word set that supports prefix/range queries
 /// and lexicographic neighbors (Next/Prev).
@@ -20,5 +21,7 @@ public interface IWordSet
 
     /// <summary>Up to k words in the inclusive lexigraphic range [lo, hi], sorted.</summary>
     IEnumerable<string> Range(string lo, string hi, int k);
+
+    int Count {get;}
 
 }
